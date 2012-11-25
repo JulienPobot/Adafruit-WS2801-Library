@@ -105,9 +105,9 @@ void colorWipe(uint32_t c, uint8_t wait) {
   
   for (i=0; i < strip.numPixels(); i++) {
       strip.setPixelColor(i, c);
-      strip.show();
       delay(wait);
   }
+  strip.show();
 }
 
 /* Helper functions */
